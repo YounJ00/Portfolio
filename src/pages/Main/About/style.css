@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  justify-content: center;
+  background: var(--second-bg-color);
+  min-height: 90vh;
+}
+
+.aboutMe {
+  margin-top: 70px;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.aboutMe-content {
+  width: 350px;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h2 {
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.title {
+  margin: 1.2em 0 0.6em 0;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 1.6em;
+}

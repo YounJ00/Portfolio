@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+
+:root {
+  --bg-color: #141619;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: rgb(60, 107, 226);
+}
+
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 5rem;
+}
+
+.portfolio h3 {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*card horizontal*/
+.card-custom-horizontal {
+  width: 95%;
+  min-height: 530px;
+  display: flex;
+  margin: 30px auto;
+  box-shadow: 0 0 0 1px rgb(25 81 151 / 0%), 0 20px 50px 0 rgb(25 81 151 / 18%);
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  background-color: #e3e7ea;
+}
+
+.card-custom-horizontal .card-box {
+  padding: 35px 35px 35px 10px;
+  width: 49%;
+}
+.card-custom-horizontal .card-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.card-custom-horizontal .card-subtitle {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.card-content {
+  border-top: 1px solid #bbbbbbad;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+.card-content p {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 22px;
+  margin-bottom: 18px;
+  margin-top: 3px;
+  line-height: 1.7em;
+}
+
+.card-custom-horizontal .card-info {
+  padding: 0.75rem 0;
+
+  color: #bbbbbbad;
+}
+
+.card-custom-horizontal .card-info button {
+  width: 50%;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #708090;
+  box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
+  float: right;
+  margin-top: 25px;
+}
+
+.card-custom-horizontal .card-info button:hover {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px #bbc3cc inset;
+  font-size: 16px;
+  user-select: none;
+}
+
+.card-custom-horizontal .card-image {
+  width: 50%;
+  overflow: hidden;
+  padding: 35px;
+}
+
+.card-custom-horizontal .card-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  //height: 250px;
+  object-fit: cover;
+}
+.card-custom-horizontal .card-reveal {
+  padding: 40px;
+  position: absolute;
+  background-color: #e3e7ea;
+  width: 100%;
+  overflow-y: auto;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 200;
+  display: none;
+  border-radius: 15px;
+}
+.card-custom-horizontal .card-reveal button {
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
+  background-color: #e3e7ea;
+  font-size: 25px;
+  width: 40px;
+  padding: 0;
+  text-align: center;
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.card-custom-horizontal .card-reveal button:hover {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px #bbc3cc inset;
+  //font-size: 16px;
+  user-select: none;
+}
+
+.card-custom-horizontal .btn-info-card {
+  background-color: transparent;
+  font-size: 18px;
+  color: #015196;
+  width: 100%;
+}
+
+.card-box > p {
+  color: #7a7a8c;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 4px 0 7px 0;
+  //border-bottom: 1px solid #bbbbbbad;
+}
+
+/* ------------이미지 슬라이드 -------------- */
+.image-gallery {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+.image-container {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.thumbnails {
+  width: 70%;
+  display: flex;
+  margin: 20px auto 0 auto;
+}
+.thumbnails label {
+  display: inline-block;
+  width: 100px;
+  height: 55px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  margin: 0;
+  flex: 1 1 150px;
+  cursor: pointer;
+  margin: 5px;
+}
+/*첫번째(코그로우)*/
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+.image-1,
+.thumbnails label[for="image1"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/e85f2882-5355-4605-8348-36b197f74e15");
+}
+.image-2,
+.thumbnails label[for="image2"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/083fc6e6-2f82-4a4f-bdfc-1fe1fb5756b6");
+}
+.image-3,
+.thumbnails label[for="image3"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/1bc48244-9c25-43b2-8a25-7e905699f2f8");
+}
+.image-4,
+.thumbnails label[for="image4"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/c44ec68b-e4db-4c92-9835-a64abe5d763a");
+}
+#image1:checked + .image-1,
+#image2:checked + .image-2,
+#image3:checked + .image-3,
+#image4:checked + .image-4 {
+  opacity: 1;
+}
+
+/*두번째(시야)*/
+.image-5,
+.image-6,
+.image-7,
+.image-8 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+.image-5,
+.thumbnails label[for="image5"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/146869cc-8fd1-411d-adae-68e525e3d66e");
+}
+.image-6,
+.thumbnails label[for="image6"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/026668d2-7c6e-49ae-945b-b584e949586f");
+}
+.image-7,
+.thumbnails label[for="image7"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/1ed09ba6-98dd-4095-9ca8-f64d8af78c41");
+}
+.image-8,
+.thumbnails label[for="image8"] {
+  background-image: url("https://github.com/Capstone-cogrow/cogrow/assets/91127380/05698435-a717-40a3-8245-8a0321c815b8");
+}
+#image5:checked + .image-5,
+#image6:checked + .image-6,
+#image7:checked + .image-7,
+#image8:checked + .image-8 {
+  opacity: 1;
+}
+
+/*세번째(포트폴리오)*/
+.image-9,
+.image-10,
+.image-11,
+.image-12 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 1.2s ease-out;
+}
+.image-9,
+.thumbnails label[for="image9"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/38308f96-d6a9-4753-9913-a0c0d805360d");
+}
+.image-10,
+.thumbnails label[for="image10"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/b1dbbacd-9e48-4e3c-9801-03c79cf6a3ff");
+}
+.image-11,
+.thumbnails label[for="image11"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/5cf82834-006b-44aa-a4b4-e4f5c75add49");
+}
+.image-12,
+.thumbnails label[for="image12"] {
+  background-image: url("https://github.com/YounJ00/YounJ00.github.io/assets/91127380/f4e3094f-233d-4fbd-ba82-c9d5ee3c417b");
+}
+#image9:checked + .image-9,
+#image10:checked + .image-10,
+#image11:checked + .image-11,
+#image12:checked + .image-12 {
+  opacity: 1;
+}
+
+.image-gallery input[type="radio"] {
+  position: absolute;
+  top: 320px;
+  z-index: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  background-color: #00000033;
+  height: 3px;
+  width: 3px;
+  border: 2px solid #f1f1f1;
+  border-radius: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 1px 4px #00000088;
+}
+.image-gallery input[type="radio"]:hover {
+  background-color: #f7f7f780;
+}
+.image-gallery input[type="radio"]:checked {
+  background-color: #f1f1f1;
+}
+.image-gallery input[type="radio"]:nth-of-type(1) {
+  left: 50%;
+  margin-left: -36px;
+}
+.image-gallery input[type="radio"]:nth-of-type(2) {
+  left: 50%;
+  margin-left: -12px;
+}
+.image-gallery input[type="radio"]:nth-of-type(3) {
+  left: 50%;
+  margin-left: 12px;
+}
+.image-gallery input[type="radio"]:nth-of-type(4) {
+  left: 50%;
+  margin-left: 36px;
+}
+
+.image-gallery label.prev,
+.image-gallery label.next {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  color: #f1f1f1;
+  text-shadow: 0px 1px 4px #00000088;
+  font-family: "Georgia", "Apple Symbols", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.image-gallery:hover label.prev,
+.image-gallery:hover label.next {
+  opacity: 1;
+}
+.image-gallery label.prev:before {
+  content: "\003c";
+}
+.image-gallery label.next:before {
+  content: "\003e";
+}
+.image-gallery label.prev {
+  left: 10px;
+}
+.image-gallery label.next {
+  right: 10px;
+}
+.image-gallery label.prev:hover,
+.image-gallery label.next:hover {
+  margin-top: -22px;
+  text-shadow: 0px 3px 4px #00000088;
+}

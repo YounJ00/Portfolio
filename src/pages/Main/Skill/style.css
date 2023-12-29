@@ -1,0 +1,159 @@
+.bar-container {
+  border-radius: 10px;
+  height: 43px;
+  background-color: #a0abcf;
+  box-shadow: 0 0 1rem var(--main-color);
+  width: 250px;
+}
+
+.html {
+  width: 90%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.html > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.css {
+  width: 90%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.css > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.react {
+  width: 70%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.react > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.javascript {
+  width: 70%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.javascript > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.typescript {
+  width: 60%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.typescript > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.figma {
+  width: 80%;
+  border-radius: 10px;
+  height: 43px;
+  background-color: #476ada;
+  animation: slide-left 0.9s ease-in-out 1s both;
+  -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  border: 0.01px solid #476ada;
+}
+
+.figma > p {
+  color: var(--second-bg-color);
+  font-weight: 600;
+}
+
+.services {
+  padding-bottom: 60px;
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-container .services-box:hover:not(:focus-visible) {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.services-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+}
+
+.services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
