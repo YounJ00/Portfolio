@@ -5,7 +5,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route exact path={process.env.PUBLIC_URL + "/"} element={<Main />} />
       </Routes>
     </BrowserRouter>
   );

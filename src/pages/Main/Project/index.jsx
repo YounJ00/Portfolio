@@ -462,16 +462,16 @@ const Project = () => {
                 <tr height="40px">
                   <th align="left">✔︎ Github</th>
                   <td>
-                    <a href="https://github.com/Capstone-cogrow">
-                      https://github.com/Capstone-cogrow
+                    <a href="https://github.com/YounJ00/Portfolio">
+                      github.com/YounJ00/Portfolio
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <th align="left">✔︎ Demo URL</th>
                   <td>
-                    <a href="https://capstone-cogrow.github.io/cogrow/">
-                      https://capstone-cogrow.github.io/cogrow/
+                    <a href="https://younj00.github.io/Portfolio/">
+                      younj00.github.io/Portfolio/
                     </a>
                   </td>
                 </tr>

@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header className="header">
       <a href="/" className="logo">
-        🐉 Younjin's Portfolio
+        🐼 Younjin's Portfolio
       </a>
       <i className="bx bx-menu" id="menu-icon"></i>
       <nav className="navbar">

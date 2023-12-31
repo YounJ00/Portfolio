@@ -42,7 +42,10 @@ const Home = () => {
             <i className="bx bxl-product-hunt"></i>
           </a>
         </div>
-        <a href="#" className="btn">
+        <a
+          href="https://drive.google.com/file/d/1UF3D6OJQZydIVcrgtCRDtX1GZK9--ep7/view?usp=sharing"
+          className="btn"
+        >
           이력서 다운로드
         </a>
       </div>
